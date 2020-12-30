@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ArticlePage correctly 1`] = `
+<div
+  className="article-page"
+>
+  <h1>
+    ArticlePage Component
+  </h1>
+</div>
+`;

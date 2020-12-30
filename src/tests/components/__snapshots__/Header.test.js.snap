@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  className="header"
+>
+  <header>
+    <h1>
+      My Trusted Source
+    </h1>
+    <NavLink
+      activeClassName="is-active"
+      exact="true"
+      to="/"
+    >
+      Articles
+    </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      to="/sources"
+    >
+      Sources
+    </NavLink>
+  </header>
+</div>
+`;

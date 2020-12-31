@@ -1,6 +1,6 @@
 const articles = [
     {
-        "id": 421,
+        "id": 436,
         "url": "http://localhost:8000/articles/421/",
         "title": "Wonder Woman 1984 online response: Is this the future of blockbusters?",
         "source": "slate",
@@ -26,7 +26,7 @@ const articles = [
         ]
     },
     {
-        "id": 422,
+        "id": 432,
         "url": "http://localhost:8000/articles/422/",
         "title": "The New York Post Is the Latest Conservative Outlet to Reject Trump’s Election Schemes",
         "source": "slate",
@@ -53,7 +53,7 @@ const articles = [
         ]
     },
     {
-        "id": 425,
+        "id": 431,
         "url": "http://localhost:8000/articles/425/",
         "title": "Washington Football Team, 2020 NFC East: The worst good season ever.",
         "source": "slate",

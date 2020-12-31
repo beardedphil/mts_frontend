@@ -2,9 +2,9 @@ import React from 'react';
 import Article from '../Article/Article';
 import './ArticleList.scss';
 
-const ArticleList = ({ articles }) => {
+const ArticleList = ({ articles = [] }) => {
     return (
-        <div className="article-list">
+        <div className="article-list" data-testid="article-list">
             {
                 articles.length === 0 ? (
                     <p>No articles found.</p>

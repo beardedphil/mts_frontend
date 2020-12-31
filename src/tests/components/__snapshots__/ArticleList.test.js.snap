@@ -3,12 +3,13 @@
 exports[`should render ArticleList correctly with articles 1`] = `
 <div
   className="article-list"
+  data-testid="article-list"
 >
   <Article
     article={
       Object {
         "article_link": "https://slate.com/culture/2020/12/wonder-woman-1984-online-response-negative.html",
-        "id": 421,
+        "id": 436,
         "image_link": "https://compote.slate.com/images/9d1b35f7-1ecf-4315-850b-a3d654269bae.jpeg?width=780&height=520&rect=1560x1040&offset=0x0",
         "keywords": Array [
           "1984",
@@ -33,13 +34,13 @@ exports[`should render ArticleList correctly with articles 1`] = `
         "url": "http://localhost:8000/articles/421/",
       }
     }
-    key="421"
+    key="436"
   />
   <Article
     article={
       Object {
         "article_link": "https://slate.com/news-and-politics/2020/12/new-york-post-editorial-trump-concede.html",
-        "id": 422,
+        "id": 432,
         "image_link": "https://compote.slate.com/images/d0af0df8-d693-419d-a3ef-c89ed86aee54.jpeg?width=780&height=520&rect=615x410&offset=0x0",
         "keywords": Array [
           "outlet",
@@ -65,13 +66,13 @@ exports[`should render ArticleList correctly with articles 1`] = `
         "url": "http://localhost:8000/articles/422/",
       }
     }
-    key="422"
+    key="432"
   />
   <Article
     article={
       Object {
         "article_link": "https://slate.com/culture/2020/12/washington-football-team-bad.html",
-        "id": 425,
+        "id": 431,
         "image_link": "https://compote.slate.com/images/525420a4-92e3-49f9-9556-b4a02bb5a28f.jpeg?width=780&height=520&rect=2929x1953&offset=0x0",
         "keywords": Array [
           "theyre",
@@ -94,7 +95,7 @@ exports[`should render ArticleList correctly with articles 1`] = `
         "url": "http://localhost:8000/articles/425/",
       }
     }
-    key="425"
+    key="431"
   />
   <Article
     article={
@@ -194,6 +195,7 @@ exports[`should render ArticleList correctly with articles 1`] = `
 exports[`should render ArticleList correctly with no articles 1`] = `
 <div
   className="article-list"
+  data-testid="article-list"
 >
   <p>
     No articles found.

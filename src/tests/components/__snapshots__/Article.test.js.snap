@@ -4,20 +4,34 @@ exports[`should render Article correctly 1`] = `
 <div
   className="article"
 >
-  <h3>
-    The New York Post Is the Latest Conservative Outlet to Reject Trump’s Election Schemes
-  </h3>
   <a
     href="https://slate.com/news-and-politics/2020/12/new-york-post-editorial-trump-concede.html"
+    rel="noreferrer"
+    target="_blank"
   >
-    https://slate.com/news-and-politics/2020/12/new-york-post-editorial-trump-concede.html
+    <div
+      className="article-background"
+    >
+      <img
+        alt="slate"
+        className="source"
+        src="./images/slate.png"
+      />
+      <img
+        alt="The New York Post Is the Latest Conservative Outlet to Reject Trump’s Election Schemes"
+        className="image"
+        src="https://compote.slate.com/images/d0af0df8-d693-419d-a3ef-c89ed86aee54.jpeg?width=780&height=520&rect=615x410&offset=0x0"
+      />
+      <div
+        className="title-background"
+      >
+        <p
+          className="title"
+        >
+          The New York Post Is the Latest Conservative Outlet to Reject Trump’s Election Schemes
+        </p>
+      </div>
+    </div>
   </a>
-  <img
-    alt="The New York Post Is the Latest Conservative Outlet to Reject Trump’s Election Schemes"
-    src="https://compote.slate.com/images/d0af0df8-d693-419d-a3ef-c89ed86aee54.jpeg?width=780&height=520&rect=615x410&offset=0x0"
-  />
-  <p>
-    slate
-  </p>
 </div>
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleList from './ArticleList';
+import ArticleList from './ArticleList/ArticleList';
 import articles from '../tests/fixtures/articles';
 
 const ArticlePage = () => {

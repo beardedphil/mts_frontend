@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ArticleList from '../../components/ArticleList';
+import ArticleList from '../../components/ArticleList/ArticleList';
 import articles from '../fixtures/articles';
 
 test('should render ArticleList correctly with no articles', () => {

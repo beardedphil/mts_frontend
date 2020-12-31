@@ -1,5 +1,6 @@
 import React from 'react';
-import Article from './Article';
+import Article from '../Article/Article';
+import './ArticleList.scss';
 
 const ArticleList = ({ articles }) => {
     return (
@@ -10,7 +11,7 @@ const ArticleList = ({ articles }) => {
                 ) : (
                     articles.map((article) => {
                         return (
-                            <Article article={article} />
+                            <Article article={article} key={article.id}/>
                         );
                     })
                 )

@@ -19,15 +19,19 @@ const ArticlePage = () => {
 
     useEffect(() => {
         const search = async () => {
-            const { data } = await axios.get('http://localhost:8000/articles/', {
+            return await axios.get('http://localhost:8000/articles/', {
                 params: {
                     keywords
                 }
             });
-
-            setArticles(data.results);
         };
-        search().then();
+        search().then((response) => {
+            if (response) {
+                setArticles(response.data.results);
+            }
+        }).catch((err) => {
+            console.log(err);
+        });
     }, [keywords]);
 
 

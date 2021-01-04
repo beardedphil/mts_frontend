@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SourceList correctly with no sources 1`] = `
+<div
+  className="source-list"
+>
+  <p>
+    No sources found.
+  </p>
+</div>
+`;
+
+exports[`should render SourceList correctly with sources 1`] = `
+<div
+  className="source-list"
+>
+  <Source
+    key="1"
+    source={
+      Object {
+        "id": 1,
+        "proper_source": "CNN",
+        "source": "cnn",
+      }
+    }
+  />
+  <Source
+    key="2"
+    source={
+      Object {
+        "id": 2,
+        "proper_source": "Slate",
+        "source": "slate",
+      }
+    }
+  />
+  <Source
+    key="3"
+    source={
+      Object {
+        "id": 3,
+        "proper_source": "MSNBC",
+        "source": "msnbc",
+      }
+    }
+  />
+  <Source
+    key="4"
+    source={
+      Object {
+        "id": 4,
+        "proper_source": "Fox News",
+        "source": "fox news",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Source correctly 1`] = `
+<div
+  className="source"
+>
+  <p>
+    ID: 
+    2
+  </p>
+  <p>
+    Source: 
+    slate
+  </p>
+  <p>
+    Proper Source: 
+    Slate
+  </p>
+</div>
+`;

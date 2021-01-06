@@ -4,19 +4,20 @@ exports[`should render Header correctly 1`] = `
 <div
   className="header"
 >
-  <header>
-    <h1>
-      My Trusted Source
-    </h1>
+  <header
+    className="ui secondary menu"
+  >
     <NavLink
-      activeClassName="is-active"
+      activeClassName="active"
+      className="item"
       exact={true}
       to="/"
     >
       Articles
     </NavLink>
     <NavLink
-      activeClassName="is-active"
+      activeClassName="active"
+      className="item"
       to="/sources"
     >
       Sources

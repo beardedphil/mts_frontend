@@ -1,0 +1,30 @@
+@import '../../styles/settings';
+
+.source {
+  border-radius: 8px;
+  box-shadow:
+          -12px -12px 12px 0 $neu-upper,
+          12px 12px 12px 0 $neu-lower;
+  margin: 20px 30px;
+  padding: 20px;
+  width: 320px;
+}
+
+.source .source-form {
+  align-items: center;
+  display: flex;
+}
+
+.source img {
+  border-radius: 8px;
+  margin-left: 20px;
+  width: 50px;
+}
+
+.source p {
+  padding-left: 90px;
+}
+
+.selected {
+  background: $highlight-gray;
+}

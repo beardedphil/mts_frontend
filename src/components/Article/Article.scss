@@ -1,15 +1,18 @@
+@import '../../styles/settings';
+
 .article {
   max-width: 320px;
-  margin: 10px;
+  margin: 15px 30px;
 }
 
 .article .article-background {
   position: relative;
-  border: 1px solid black;
   border-radius: 8px;
+  box-shadow:
+          -12px -12px 12px 0 $neu-upper,
+          12px 12px 12px 0 $neu-lower;
   margin-bottom: 1em;
   overflow: hidden;
-  background-color: #111111;
   height: 300px;
   width: auto;
   z-index: 1;
@@ -22,7 +25,7 @@
 }
 
 .article a {
-  color: #f3f3f3;
+  color: $text-color;
   font-size: 18px;
 }
 
@@ -30,21 +33,19 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(17,17,17,.9);
   z-index: 3;
 }
 
 .article .source {
-  border-radius: 8px;
+  box-shadow: none;
+  left: -25px;
   position: absolute;
-  left: 15px;
-  top: 15px;
+  top: -15px;
   width: 50px;
   z-index: 3;
 }
 
 .article .title {
-  font-family: Georgia, sans-serif;
   padding: 0 1em;
   text-align: center;
 }

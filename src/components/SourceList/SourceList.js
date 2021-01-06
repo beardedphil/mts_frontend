@@ -1,5 +1,6 @@
 import React from 'react';
-import Source from './Source';
+import Source from '../Source/Source';
+import './SourceList.scss';
 
 const SourceList = ({ sources = [] }) => {
     return (

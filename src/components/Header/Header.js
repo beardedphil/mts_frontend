@@ -5,10 +5,9 @@ import './Header.scss';
 const Header = () => {
     return (
         <div className="header">
-            <header>
-                <h1>My Trusted Source</h1>
-                <NavLink to='/' activeClassName="is-active" exact={true}>Articles</NavLink>
-                <NavLink to='/sources' activeClassName="is-active">Sources</NavLink>
+            <header className="ui secondary menu">
+                <NavLink to='/' className="item" activeClassName="active" exact={true}>Articles</NavLink>
+                <NavLink to='/sources' className="item" activeClassName="active">Sources</NavLink>
             </header>
         </div>
     );

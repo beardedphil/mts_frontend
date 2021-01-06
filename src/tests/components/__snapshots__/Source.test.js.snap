@@ -1,20 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Source correctly 1`] = `
-<div
-  className="source"
+<ContextProvider
+  value={Array []}
 >
-  <p>
-    ID: 
-    2
-  </p>
-  <p>
-    Source: 
-    slate
-  </p>
-  <p>
-    Proper Source: 
-    Slate
-  </p>
-</div>
+  <ContextProvider
+    value={[Function]}
+  >
+    <Source
+      source={
+        Object {
+          "id": 2,
+          "proper_source": "Slate",
+          "source": "slate",
+        }
+      }
+    />
+  </ContextProvider>
+</ContextProvider>
 `;

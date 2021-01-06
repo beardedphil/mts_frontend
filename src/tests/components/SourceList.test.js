@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SourceList from '../../components/SourceList';
+import SourceList from '../../components/SourceList/SourceList';
 import sources from '../fixtures/sources';
 
 test('should render SourceList correctly with no sources', () => {

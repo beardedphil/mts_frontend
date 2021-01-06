@@ -4,9 +4,10 @@ import articles from '../fixtures/articles';
 import { act } from 'react-dom/test-utils';
 import { mount } from 'enzyme';
 import { render, fireEvent } from '@testing-library/react';
-import ArticlePage from '../../components/ArticlePage';
+import ArticlePage from '../../components/ArticlePage/ArticlePage';
 import ArticleList from '../../components/ArticleList/ArticleList';
 import Article from '../../components/Article/Article';
+import { TrustedSourceProvider } from '../../components/contexts/TrustedSourceContext';
 
 jest.mock('axios');
 
@@ -16,8 +17,12 @@ describe('should call API', () => {
     beforeAll(() => {
         axios.get = jest.fn();
 
-        const { getByLabelText } = render(<ArticlePage/>);
-        input = getByLabelText('Search');
+        const { getByTestId } = render(
+            <TrustedSourceProvider>
+                <ArticlePage/>
+            </TrustedSourceProvider>
+        );
+        input = getByTestId('search');
     });
 
     test('with empty array when search bar is empty',async () => {

@@ -50,7 +50,17 @@ exports[`should render SourceList correctly with sources 1`] = `
       Object {
         "id": 4,
         "proper_source": "Fox News",
-        "source": "fox news",
+        "source": "fox",
+      }
+    }
+  />
+  <Source
+    key="5"
+    source={
+      Object {
+        "id": 5,
+        "proper_source": "BBC News",
+        "source": "bbc",
       }
     }
   />

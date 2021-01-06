@@ -1,0 +1,16 @@
+.field {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.field input {
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  .field input {
+    width: 350px;
+  }
+}
+

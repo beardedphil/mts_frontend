@@ -13,8 +13,12 @@ const sources = [
         proper_source: 'MSNBC'
     }, {
         id: 4,
-        source: 'fox news',
+        source: 'fox',
         proper_source: 'Fox News'
+    }, {
+        id: 5,
+        source: 'bbc',
+        proper_source: 'BBC News'
     }
 ]
 

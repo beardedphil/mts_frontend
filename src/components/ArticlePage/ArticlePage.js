@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ArticleList from './ArticleList/ArticleList';
+import ArticleList from '../ArticleList/ArticleList';
+import { useTrustedSources } from '../contexts/TrustedSourceContext';
+import './ArticlePage.scss';
 
 const ArticlePage = () => {
     const [terms, setTerms] = useState('');
     const [articles, setArticles] = useState();
-    const [keywords, setKeywords] = useState([])
+    const [keywords, setKeywords] = useState([]);
+    const [trustedSources] = useTrustedSources();
 
     useEffect(() => {
         const timerId = setTimeout(() => {
@@ -19,9 +22,11 @@ const ArticlePage = () => {
 
     useEffect(() => {
         const search = async () => {
+            const sources = trustedSources.length > 0 ? trustedSources.toString() : null;
             return await axios.get('http://localhost:8000/articles/', {
                 params: {
-                    keywords
+                    keywords,
+                    sources
                 }
             });
         };
@@ -32,18 +37,18 @@ const ArticlePage = () => {
         }).catch((err) => {
             console.log(err);
         });
-    }, [keywords]);
+    }, [keywords, trustedSources]);
 
 
     return (
         <div className="article-page">
-            <h1>ArticlePage Component</h1>
             <div className="form">
                 <div className="field">
-                    <label htmlFor="search">Search</label>
                     <input
+                        data-testid="search"
                         id="search"
                         onChange={e => setTerms(e.target.value)}
+                        placeholder="Search..."
                         type="text"
                         value={terms}
                     />

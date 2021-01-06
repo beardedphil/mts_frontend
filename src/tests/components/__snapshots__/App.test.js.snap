@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render App correctly 1`] = `<AppRouter />`;
+exports[`should render App correctly 1`] = `
+<div
+  className="app"
+>
+  <TrustedSourceProvider>
+    <AppRouter />
+  </TrustedSourceProvider>
+</div>
+`;

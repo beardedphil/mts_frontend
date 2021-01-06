@@ -4,9 +4,7 @@ exports[`should render Header correctly 1`] = `
 <div
   className="header"
 >
-  <header
-    className="ui secondary menu"
-  >
+  <header>
     <NavLink
       activeClassName="active"
       className="item"

@@ -1,10 +1,24 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState, createContext, useContext, useEffect } from 'react';
 
 export const TrustedSourceStateContext = createContext();
 export const TrustedSourceDispatchContext = createContext();
 
 const TrustedSourceProvider = props => {
     const [trustedSources, setTrustedSources] = useState([]);
+
+    useEffect(() => {
+        try {
+            const json = localStorage.getItem('sources');
+            const sources = JSON.parse(json);
+
+            if (sources) {
+                setTrustedSources(sources);
+            }
+        } catch (e) {
+            const sources = JSON.stringify([]);
+            localStorage.setItem('sources', sources);
+        }
+    }, [])
 
     return (
         <TrustedSourceStateContext.Provider value={trustedSources}>

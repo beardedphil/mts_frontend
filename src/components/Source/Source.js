@@ -14,17 +14,22 @@ const Source = ({ source }) => {
 
     const updateTrustedSources = (e) => {
         setTrusted(e.target.checked);
+        const index = trustedSources.indexOf(source.source);
         // Moving from unchecked to checked
         if (e.target.checked) {
-            const index = trustedSources.indexOf(source.source);
             if (index === -1) {
-                setTrustedSources([...trustedSources, source.source]);
+                const updatedSources = [...trustedSources, source.source]
+                setTrustedSources(updatedSources);
+                const json = JSON.stringify(updatedSources);
+                localStorage.setItem('sources', json);
             }
         // Moving from checked to unchecked
         } else {
-            const index = trustedSources.indexOf(source.source)
             if (index > -1) {
-                setTrustedSources(trustedSources.filter(item => item !== source.source));
+                const updatedSources = trustedSources.filter(item => item !== source.source);
+                setTrustedSources(updatedSources);
+                const json = JSON.stringify(updatedSources);
+                localStorage.setItem('sources', json);
             }
         }
     }

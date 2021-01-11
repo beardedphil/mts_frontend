@@ -1,7 +1,7 @@
 @import '../../styles/settings';
 
 .article {
-  max-width: 320px;
+  width: 310px;
   margin: 15px 30px;
 }
 
@@ -19,6 +19,7 @@
 }
 
 .article .image {
+  max-height: 200px;
   padding: 10px;
   width: 290px;
 }

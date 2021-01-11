@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ArticleList correctly with articles 1`] = `
-<div
+<InfiniteScroll
   className="article-list"
   data-testid="article-list"
+  dataLength={6}
+  loader={
+    <h4>
+      Loading...
+    </h4>
+  }
 >
   <Article
     article={
@@ -189,16 +195,18 @@ exports[`should render ArticleList correctly with articles 1`] = `
     }
     key="425"
   />
-</div>
+</InfiniteScroll>
 `;
 
 exports[`should render ArticleList correctly with no articles 1`] = `
-<div
+<InfiniteScroll
   className="article-list"
   data-testid="article-list"
->
-  <p>
-    No articles found.
-  </p>
-</div>
+  dataLength={0}
+  loader={
+    <h4>
+      Loading...
+    </h4>
+  }
+/>
 `;

@@ -45,7 +45,7 @@ const ArticlePage = () => {
     useEffect(() => {
         const search = async () => {
             const sources = trustedSources.length > 0 ? trustedSources.toString() : null;
-            return await axios.get('http://localhost:8000/articles/', {
+            return await axios.get('https://mytrustedsourceapi.herokuapp.com/articles/', {
                 params: {
                     keywords,
                     sources

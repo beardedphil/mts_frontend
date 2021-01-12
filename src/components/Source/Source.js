@@ -10,7 +10,7 @@ const Source = ({ source }) => {
         if (trustedSources.includes(source.source)) {
             setTrusted(true);
         }
-    }, []);
+    }, [trustedSources, source.source]);
 
     const updateTrustedSources = (e) => {
         setTrusted(e.target.checked);
